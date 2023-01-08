@@ -1,0 +1,12 @@
+.inactive{
+    background-color: gray;
+}
+.active{
+    background-color: green;
+}
+.unknown{
+    background-color: maroon;
+}
+li{
+    color: white;
+}

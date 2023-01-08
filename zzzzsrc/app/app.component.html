@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <app-new-account></app-new-account>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="list-group">
+                <app-account *ngFor="let Elaccount of accounts" [account]="Elaccount">
+                </app-account>
+            </ul>
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+<li class="list-group-item mt-1" ngClass="{{account.status}}">
+    <h1>{{account.name}}</h1>
+    <p>this account is {{account.status}}</p>
+    <button class="btn btn-primary btn-sm m-1" (click)="OnSetStatus('active')">Set to Active</button>
+    <button class="btn btn-primary btn-sm m-1" (click)="OnSetStatus('inactive')">Set to Inactive</button>
+    <button class="btn btn-primary btn-sm m-1" (click)="OnSetStatus('unknown')">Set to Unknown</button>
+</li>

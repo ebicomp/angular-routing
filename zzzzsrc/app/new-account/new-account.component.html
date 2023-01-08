@@ -1,0 +1,17 @@
+
+    <div class="mb-3">
+      <label for="accountName" class="form-label">Account Name</label>
+      <input type="text" class="form-control" id="accountName" aria-describedby="Name of Account" #name>
+      <div id="emailHelp" class="form-text">Try to choose a name which is longer than 15 characters</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Account Type</label>
+      <select class="form-select" aria-label="Default select example" #accountType>
+
+      <option selected>Open this select menu</option>
+      <option value="active">Active</option>
+      <option value="inactive">Unactive</option>
+      <option value="unknown">Unknown</option>
+      </select>      
+    </div>
+    <button class="btn btn-primary btn-sm" (click)="onAdd(name.value, accountType.value)" >Add Account</button>
